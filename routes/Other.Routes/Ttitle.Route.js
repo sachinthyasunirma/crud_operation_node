@@ -22,6 +22,6 @@ router.post('/create', titleCreate)
 @Access- Public
 @Method- delete 
 */
-router.put('/delete/:title_id', titleDelete)
+router.delete('/delete/:title_id', titleDelete)
 
 module.exports = router

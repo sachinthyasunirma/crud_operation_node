@@ -4,14 +4,21 @@ const router = express.Router();
 @Route - /employee
 @Desc  - Employee Route
 */
-const employeeRoute = require();
-router.use("/question",questionRoute);
+const employeeRoute = require('../Other.Routes/Employee.Route');
+router.use("/employe",employeeRoute);
 
 /*
-@Route - /category
-@Desc  - Category Route 
+@Route - /salary
+@Desc  - Salary Route 
 */
-const categoryRoute = require('../Other.Route/Category/Category.Route');
-router.use("/category",categoryRoute);
+const salaryRoute = require('../Other.Routes/Salary.Route');
+router.use("/salary",salaryRoute);
+
+/*
+@Route - /title
+@Desc  - Titile Route 
+*/
+const titleRoute = require('../Other.Routes/Ttitle.Route');
+router.use("/title",titleRoute);
 
 module.exports = router;
